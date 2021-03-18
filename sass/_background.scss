@@ -1,0 +1,23 @@
+.background-img-light {
+    width: 100%;
+    height: 40vh;
+    background-image: url("./images/bg-desktop-light.jpg"), linear-gradient(to right, $linearBack-2, $linearBack-1);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.background-img-dark {
+    width: 100%;
+    height: 40vh;
+    background-image: url("./images/bg-desktop-dark.jpg"), linear-gradient(to right, $linearBack-2, $linearBack-1);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}

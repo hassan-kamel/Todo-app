@@ -1,0 +1,167 @@
+.body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        width: 80vw;
+        max-width: 70rem;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding: 1rem 1.5rem;
+            color: #fff;
+            button {
+                @include button;
+                color: #fff;
+                transition: transform 0.4s ease;
+                &:hover {
+                    transform: scale(1.5);
+                }
+                &:active {
+                    transform: scale(0.2);
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                letter-spacing: 10px;
+                text-transform: uppercase;
+            }
+        }
+        .input {
+            display: flex;
+            align-items: center;
+            @include card;
+            margin-bottom: 2rem;
+            input {
+                border: none;
+                outline: none;
+                background-color: transparent;
+                padding-right: 1rem;
+                flex: 2;
+                color: $V_D_GrayishBlue;
+                &:focus,
+                &:active {
+                    outline: none;
+                    border: none;
+                }
+            }
+            button {
+                @include button;
+                margin-left: auto;
+                color: $linearBack-2;
+                transition: transform 0.4s ease;
+                &:hover {
+                    transform: scale(1.5);
+                }
+                &:active {
+                    transform: scale(0.2);
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .main {
+            max-height: 50vh;
+            min-height: 40vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding: 0 1rem;
+            margin-bottom: 2rem;
+            .todo {
+                display: flex;
+                align-items: center;
+                @include card;
+                box-shadow: 0px 5px 5px rgba(#000, 0.5);
+                margin-bottom: 0.5rem;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.03);
+                    transition: all 0.2s ease;
+                }
+                &:hover i {
+                    opacity: 1;
+                }
+                h3 {
+                    text-transform: capitalize;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color: $V_D_GrayishBlue;
+                }
+                button {
+                    @include button;
+                    margin-left: auto;
+                    &>i {
+                        color: $D_GrayishBlue;
+                        opacity: 0;
+                        transition: all 0.5s ease;
+                        &:hover {
+                            transform: scale(1.5);
+                            color: $linearBack-2;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                        &:active {
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+            }
+            &::-webkit-scrollbar {
+                width: .5rem;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $linearBack-2;
+                border-radius: 50px;
+            }
+        }
+        .footer {
+            .options {
+                @include card;
+                display: flex;
+                justify-content: space-between;
+                color: $D_GrayishBlue;
+                font-size: 1.3rem;
+                text-transform: capitalize;
+                margin: 1rem;
+                &:last-child {
+                    justify-content: center;
+                    @media (min-width: 599px) {
+                        justify-content: space-between !important;
+                    }
+                }
+                .items-number {}
+                .show-fun {
+                    button {
+                        cursor: pointer !important;
+                        @include button;
+                        &:hover {
+                            all: unset;
+                            color: $V_D_GrayishBlue;
+                        }
+                        &:not(:last-child) {
+                            margin-right: .5rem;
+                        }
+                    }
+                }
+                .clear-completed {
+                    button {
+                        cursor: pointer !important;
+                        @include button;
+                        &:hover {
+                            all: unset;
+                            color: $V_D_GrayishBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

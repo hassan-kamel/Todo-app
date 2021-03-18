@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="back" class="background-img-light"></div>
+
+    <div class="body">
+        <div class="container">
+            <div class="header">
+                <h1>todo</h1>
+                <button id="toggle-mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+
+            </div>
+
+
+            <div class="input">
+                <div class="circle-empty">
+                    <i class="fas fa-check"></i>
+                </div>
+                <input type="text" placeholder="Create a new Todo">
+                <button><i class="fas fa-angle-double-right"></i>
+                </button>
+            </div>
+
+
+            <div class="main">
+
+                <!-- from local storage -->
+
+            </div>
+
+
+            <div class="footer">
+                <div class="options hide-for-desktop">
+                    <div class="items-number">
+                        5 items left
+                    </div>
+
+                    <div class="clear-completed">
+                        <button>clear completed</button>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="items-number hide-for-mobile">
+                        5 items left
+                    </div>
+                    <div class="show-fun">
+                        <button class="active">all</button>
+                        <button>active</button>
+                        <button>completed</button>
+                    </div>
+                    <div class="clear-completed hide-for-mobile">
+                        <button>clear completed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Todo
+
+     Add dynamic number items left All Active Completed Clear Completed Drag and drop to reorder list
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </div> 
+  -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

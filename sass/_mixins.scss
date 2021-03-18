@@ -1,0 +1,13 @@
+@mixin card {
+    padding: 1rem 3rem;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(#000, 0.5);
+    border-radius: 5px;
+}
+
+@mixin button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
