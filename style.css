@@ -194,8 +194,6 @@ body {
   background-color: #fff;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
   color: #9394a5;
   font-size: 1.3rem;
   text-transform: capitalize;
@@ -208,6 +206,10 @@ body {
   .body .container .footer .options:last-child {
     justify-content: space-between !important;
   }
+}
+.body .container .footer .options .show-fun {
+  display: flex;
+  justify-content: space-between;
 }
 .body .container .footer .options .show-fun button {
   cursor: pointer !important;

@@ -125,8 +125,6 @@
         .footer {
             .options {
                 @include card;
-                display: flex;
-                justify-content: space-between;
                 color: $D_GrayishBlue;
                 font-size: 1.3rem;
                 text-transform: capitalize;
@@ -139,6 +137,8 @@
                 }
                 .items-number {}
                 .show-fun {
+                    display: flex;
+                    justify-content: space-between;
                     button {
                         cursor: pointer !important;
                         @include button;
